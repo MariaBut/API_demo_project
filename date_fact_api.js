@@ -1,11 +1,11 @@
 const get_api_res_btn = document.getElementById('get_api_res_btn')
 const api_result = document.getElementById('api_result')
-const uidate = document.getElementById('uidate')
+const uiday = document.getElementById('uiday')
 const uimonth = document.getElementById('uimonth');
 
 get_api_res_btn.addEventListener('click', getAPI);
     function getAPI(){
-        let endPoint = "http://numbersapi.com/" + uimonth.value + "/" + uidate.value + "/date";
+        let endPoint = "http://numbersapi.com/" + uimonth.value + "/" + uiday.value + "/date";
         fetch(endPoint, {
 		method: 'GET'
 	})
